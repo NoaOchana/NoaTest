@@ -7,4 +7,4 @@ This is a python application which gets images and creates a PDF file in a folde
     docker build -t convertor .
 
 ## run
-    docker run -it --name mypython -e PDFNoa -v $PWD/images:/app/images -v $PWD/output:/app/output convertor images output
+    docker run -it --name mypython -e PDF_NAME=PDFNoa -v $PWD/images:/app/images -v $PWD/output:/app/output convertor images
